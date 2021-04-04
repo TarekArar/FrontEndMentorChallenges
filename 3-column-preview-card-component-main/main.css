@@ -1,0 +1,101 @@
+body {
+  font-size: 15px;
+  --orange-color: hsl(31, 77%, 52%);
+  --cyan-color: hsl(184, 100%, 22%);
+  --dark-cyan-color: hsl(179, 100%, 13%);
+  --white-color: hsla(0, 0%, 100%, 0.75);
+  --light-grey-color: hsl(0, 0%, 95%);
+  background-color: var(--light-grey-color);
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 100;
+  color: var(--white-color);
+  /* width: auto; */
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--light-grey-color);
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.cards_container {
+  margin: 9rem 14rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.card {
+  padding: 2em 4em;
+  /* height: 100%; */
+}
+/* .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+} */
+/* .icon {
+  /* margin-bottom: ; 
+} */
+.card-content > * {
+  padding-bottom: 1rem;
+}
+
+.orange {
+  background-color: var(--orange-color);
+  border-radius: 7px 0 0 7px;
+}
+.cyan {
+  background-color: var(--cyan-color);
+}
+.dark_cyan {
+  background-color: var(--dark-cyan-color);
+  border-radius: 0 7px 7px 0;
+}
+
+button {
+  margin-top: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 550;
+  background-color: var(--light-grey-color);
+
+  padding: 0.7em 2em;
+  border-radius: 1.4em;
+  border: 2px solid var(--light-grey-color);
+  box-shadow: none;
+}
+button:hover {
+  cursor: pointer;
+}
+.orange > button {
+  color: var(--orange-color);
+}
+.cyan > button {
+  color: var(--cyan-color);
+}
+.dark_cyan > button {
+  color: var(--dark-cyan-color);
+}
+.orange > button:hover {
+  background-color: var(--orange-color);
+  color: var(--light-grey-color);
+}
+.cyan > button:hover {
+  background-color: var(--cyan-color);
+  color: var(--light-grey-color);
+}
+.dark_cyan > button:hover {
+  background-color: var(--dark-cyan-color);
+  color: var(--light-grey-color);
+}
+@media only screen and (max-width: 375px) {
+  .cards_container {
+    flex-direction: column;
+  }
+}
